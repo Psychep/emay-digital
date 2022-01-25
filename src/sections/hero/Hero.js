@@ -16,19 +16,19 @@ class Hero extends React.Component {
 
     updateDimensions = () => {
         if (this.state.height !== window.innerHeight) {
-            this.setState({height: window.innerHeight})
+            this.setState({ height: window.innerHeight })
         }
         if (this.state.width !== window.innerWidth) {
-            this.setState({width: window.innerWidth})
+            this.setState({ width: window.innerWidth })
         }
     }
 
-    
+
     componentDidMount() {
-        this.setState({height: window.innerHeight, width: window.innerWidth})
+        this.setState({ height: window.innerHeight, width: window.innerWidth })
         window.addEventListener('resize', this.updateDimensions)
     }
-    
+
     componentWillUnmount() {
         window.removeEventListener('resize', this.updateDimensions)
     }
@@ -51,7 +51,7 @@ class Hero extends React.Component {
             width: 100%;
             display: flex;
             align-items: center;
-            background-color: rgba(0,0,0,.5);
+            background-color: rgba(0,0,0,0.7);
         `
 
         const Heading1 = styled.h1`
@@ -204,22 +204,22 @@ class Hero extends React.Component {
             font-weight: 300;
             color: #c5c5c5;
         `
-        
+
         return (
-                <Section id="home">
-                    <Overlay style={{height: `${this.state.width > 500 ? this.state.height : 350}px`}}>
-                        <Container>
-                            <Content>
-                                <Heading1>
-                                    Creative
-                                </Heading1>
-                                <Heading2>
-                                    Digital Agency
-                                </Heading2>
-                                <Separator/>
-                                <Type>
-                                    <Typewriter
-                                        options={{
+            <Section id="home">
+                <Overlay style={{ height: `${this.state.width > 500 ? this.state.height : 350}px` }}>
+                    <Container>
+                        <Content>
+                            <Heading1>
+                                Creative
+                            </Heading1>
+                            <Heading2>
+                                Digital Agency
+                            </Heading2>
+                            <Separator />
+                            <Type>
+                                <Typewriter
+                                    options={{
                                         strings: [
                                             'App Developers',
                                             'Web Designers',
@@ -227,70 +227,70 @@ class Hero extends React.Component {
                                         ],
                                         autoStart: true,
                                         loop: true,
-                                        }}
-                                    />
-                                </Type>
-                            </Content>
-                        </Container>
-                    </Overlay>
-                    <BottomContent>
-                            <Container>
-                                <Row>
-                                    <ServiceCol md={4} style={{borderRight: this.state.width > 500 ? "1px solid #444" : "none"}}>
-                                        <Service>
-                                            <ServiceContent>
-                                                <ServiceIcon>
-                                                    <img src={this.props.webexpertIcon.childImageSharp.fluid.src} alt="web experts" />
-                                                </ServiceIcon>
-                                                <ServiceHeading>Web Experts</ServiceHeading>
-                                                <ServiceSeparator/>
-                                                <ServiceText>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae ultricies lacus, vitae varius velit. 
-                                                    Pellentesque blandit libero eu turpis condimentum bibendum.
-                                                </ServiceText>
-                                            </ServiceContent>
-                                        </Service>
-                                    </ServiceCol>
-                                    <ServiceCol md={4} style={{borderRight: this.state.width > 500 ? "1px solid #444" : "none"}}>
-                                        <Service>
-                                            <ServiceContent>
-                                                <ServiceIcon>
-                                                        <img src={this.props.mobileIcon.childImageSharp.fluid.src} alt="mobile experts" />
-                                                </ServiceIcon>
-                                                <ServiceHeading>Mobile Experts</ServiceHeading>
-                                                <ServiceSeparator/>
-                                                <ServiceText>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae ultricies lacus, vitae varius velit. 
-                                                    Pellentesque blandit libero eu turpis condimentum bibendum.
-                                                </ServiceText>
-                                            </ServiceContent>
-                                        </Service>
-                                    </ServiceCol>
-                                    <ServiceCol md={4}>
-                                        <Service>
-                                            <ServiceContent>
-                                                <ServiceIcon>
-                                                        <img src={this.props.seoIcon.childImageSharp.fluid.src} alt="seo experts" />
-                                                </ServiceIcon>
-                                                <ServiceHeading>SEO Experts</ServiceHeading>
-                                                <ServiceSeparator/>
-                                                <ServiceText>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae ultricies lacus, vitae varius velit. 
-                                                    Pellentesque blandit libero eu turpis condimentum bibendum.
-                                                </ServiceText>
-                                            </ServiceContent>
-                                        </Service>
-                                    </ServiceCol>
-                                </Row>
-                            </Container>
-                    </BottomContent>
-                </Section>
+                                    }}
+                                />
+                            </Type>
+                        </Content>
+                    </Container>
+                </Overlay>
+                <BottomContent>
+                    <Container>
+                        <Row>
+                            <ServiceCol md={4} style={{ borderRight: this.state.width > 500 ? "1px solid #444" : "none" }}>
+                                <Service>
+                                    <ServiceContent>
+                                        <ServiceIcon>
+                                            <img src={this.props.webexpertIcon.childImageSharp.fluid.src} alt="web experts" />
+                                        </ServiceIcon>
+                                        <ServiceHeading>Web Experts</ServiceHeading>
+                                        <ServiceSeparator />
+                                        <ServiceText>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae ultricies lacus, vitae varius velit.
+                                            Pellentesque blandit libero eu turpis condimentum bibendum.
+                                        </ServiceText>
+                                    </ServiceContent>
+                                </Service>
+                            </ServiceCol>
+                            <ServiceCol md={4} style={{ borderRight: this.state.width > 500 ? "1px solid #444" : "none" }}>
+                                <Service>
+                                    <ServiceContent>
+                                        <ServiceIcon>
+                                            <img src={this.props.mobileIcon.childImageSharp.fluid.src} alt="mobile experts" />
+                                        </ServiceIcon>
+                                        <ServiceHeading>Mobile Experts</ServiceHeading>
+                                        <ServiceSeparator />
+                                        <ServiceText>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae ultricies lacus, vitae varius velit.
+                                            Pellentesque blandit libero eu turpis condimentum bibendum.
+                                        </ServiceText>
+                                    </ServiceContent>
+                                </Service>
+                            </ServiceCol>
+                            <ServiceCol md={4}>
+                                <Service>
+                                    <ServiceContent>
+                                        <ServiceIcon>
+                                            <img src={this.props.seoIcon.childImageSharp.fluid.src} alt="seo experts" />
+                                        </ServiceIcon>
+                                        <ServiceHeading>SEO Experts</ServiceHeading>
+                                        <ServiceSeparator />
+                                        <ServiceText>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae ultricies lacus, vitae varius velit.
+                                            Pellentesque blandit libero eu turpis condimentum bibendum.
+                                        </ServiceText>
+                                    </ServiceContent>
+                                </Service>
+                            </ServiceCol>
+                        </Row>
+                    </Container>
+                </BottomContent>
+            </Section>
         )
     }
 }
 export default props => (
     <StaticQuery
-      query={graphql`
+        query={graphql`
       query {
         background: file(relativePath: {eq: "background-poly.jpg"}) {
           childImageSharp {
@@ -322,15 +322,15 @@ export default props => (
         }
       }
       `}
-      render={({ 
-        background, 
-        webexpertIcon, 
-        mobileIcon, 
-        seoIcon}) => <Hero  
-        background={background} 
-        webexpertIcon={webexpertIcon} 
-        mobileIcon={mobileIcon} 
-        seoIcon={seoIcon}
-        {...props} />}
+        render={({
+            background,
+            webexpertIcon,
+            mobileIcon,
+            seoIcon }) => <Hero
+                background={background}
+                webexpertIcon={webexpertIcon}
+                mobileIcon={mobileIcon}
+                seoIcon={seoIcon}
+                {...props} />}
     />
-  )
+)
