@@ -45,11 +45,11 @@ class ProgressBar extends React.Component {
         `
 
 
-        return(
+        return (
             <ProgressContainer>
                 <Text>{text}</Text>
                 <Value>{this.props.value}%</Value>
-                <Progress style={{width: `${this.props.value}%`}}></Progress>
+                <Progress style={{ width: `${this.props.value}%` }}></Progress>
             </ProgressContainer>
         )
     }

@@ -8,20 +8,20 @@ class PageRevealer extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            animation : false,
+            animation: false,
             complete: false,
-            hide: false
+            hide: true
         }
         this.reveal = this.reveal.bind(this)
     }
 
     reveal() {
         if (!this.state.complete) {
-            this.setState({animation: true, complete: true})
-            setTimeout(() => { 
+            this.setState({ animation: true, complete: true })
+            setTimeout(() => {
                 document.getElementById("reveal_container").style.backgroundColor = "transparent"
-                setTimeout(() => { 
-                    this.setState({animation: false, hide: true})
+                setTimeout(() => {
+                    this.setState({ animation: false, hide: true })
                 }, 500);
             }, 400);
         }
@@ -92,7 +92,7 @@ class PageRevealer extends React.Component {
             }
         `
         return (
-            <RevealContainer id="reveal_container" style={{display: this.state.hide ? "none" : "flex"}}>
+            <RevealContainer id="reveal_container" style={{ display: this.state.hide ? "none" : "flex" }}>
                 {this.baffle()}
                 <Reveal id="revealer" className={this.state.animation ? "animate" : ""} />
             </RevealContainer>

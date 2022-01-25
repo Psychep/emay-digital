@@ -6,8 +6,8 @@ class Glitch extends React.Component {
 
     render() {
         const { text } = this.props
-        return(
-            <p className="glitch" data-text={text}>{text}</p>
+        return (
+            <p className="glitch" data-text={text}></p>
         )
     }
 }
