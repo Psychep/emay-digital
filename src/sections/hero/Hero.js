@@ -42,8 +42,9 @@ class Hero extends React.Component {
                 width: 100%;
                 height: 100%;
             }
+            padding-top:30px;
             background-image: url(${this.props.background.childImageSharp.fluid.src});
-            background-size: cover;
+            background-size:  cover;
             background-repeat: no-repeat;
         `
 
@@ -81,10 +82,10 @@ class Hero extends React.Component {
             color: #fff;
             font-weight: 700;
             text-transform: uppercase;
-            background: -webkit-linear-gradient(left, #00ffff , #007a7a);
-            background: -o-linear-gradient(right, #00ffff, #007a7a);
-            background: -moz-linear-gradient(right, #00ffff, #007a7a);
-            background: linear-gradient(to right, #00ffff , #007a7a); 
+            background: -webkit-linear-gradient(top, #da5bd3 , #a0fefa );
+            background: -o-linear-gradient(top, #da5bd3 , #a0fefa );
+            background: -moz-linear-gradient(top, #da5bd3 , #a0fefa );
+            background-image: linear-gradient(6deg, rgba(218,91,211,1) 0%, rgba(160,254,250,1) 48%, rgba(48,56,201,1) 100%);
            -webkit-background-clip: text;
            -webkit-text-fill-color: transparent;
             @media (max-width:767px) {
