@@ -99,7 +99,7 @@ class ServicesOne extends React.Component {
                         alt="Mobile App Development"
                       />
                     </ServiceIcon>
-                    <ServiceHeading>Mobile App Development</ServiceHeading>
+                    <ServiceHeading>DÜĞÜN ÇEKİMLERİ</ServiceHeading>
                     <ServiceSeparator />
                     <ServiceList>
                       <ServiceListElement>
@@ -124,7 +124,7 @@ class ServicesOne extends React.Component {
                         alt="Mobile App Development"
                       />
                     </ServiceIcon>
-                    <ServiceHeading>Web Development</ServiceHeading>
+                    <ServiceHeading>Sosyal Medya</ServiceHeading>
                     <ServiceSeparator />
                     <ServiceList>
                       <ServiceListElement>
@@ -149,7 +149,7 @@ class ServicesOne extends React.Component {
                         alt="Mobile App Development"
                       />
                     </ServiceIcon>
-                    <ServiceHeading>Email Marketing</ServiceHeading>
+                    <ServiceHeading>GRAFİK Tasarım</ServiceHeading>
                     <ServiceSeparator />
                     <ServiceList>
                       <ServiceListElement>
@@ -174,7 +174,7 @@ class ServicesOne extends React.Component {
                         alt="Mobile App Development"
                       />
                     </ServiceIcon>
-                    <ServiceHeading>Search Engine Optimization</ServiceHeading>
+                    <ServiceHeading>Web Tasarım</ServiceHeading>
                     <ServiceSeparator />
                     <ServiceList>
                       <ServiceListElement>
@@ -199,7 +199,7 @@ class ServicesOne extends React.Component {
                         alt="Mobile App Development"
                       />
                     </ServiceIcon>
-                    <ServiceHeading>Network Management</ServiceHeading>
+                    <ServiceHeading>Tanıtım & Reklam</ServiceHeading>
                     <ServiceSeparator />
                     <ServiceList>
                       <ServiceListElement>
@@ -224,7 +224,7 @@ class ServicesOne extends React.Component {
                         alt="Mobile App Development"
                       />
                     </ServiceIcon>
-                    <ServiceHeading>UI/UX Development</ServiceHeading>
+                    <ServiceHeading>UI/UX Geliştirme</ServiceHeading>
                     <ServiceSeparator />
                     <ServiceList>
                       <ServiceListElement>
