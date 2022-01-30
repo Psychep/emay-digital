@@ -9,7 +9,7 @@ import PortfolioOne from "sections/portfolio/PortfolioOne.js";
 import TestimonialsOne from "sections/testimonials/TestimonialsOne.js";
 import TeamOne from "sections/team/TeamOne.js";
 import ClientsOne from "sections/clients/ClientsOne.js";
-import ContactCreative from "sections/contact/ContactCreative.js";
+import ContactCreative from "sections/contact/ContactPersonal.js";
 
 class Index extends React.Component {
   render() {
