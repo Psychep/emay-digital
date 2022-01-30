@@ -2,7 +2,10 @@
 id: 1
 image: './image.jpg'
 large: './large.jpg'
-name: 'John Doe'
-profession: 'Software Engineer'
-text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel est eu tortor porttitor congue. Praesent finibus eleifend mi, eu dictum est scelerisque ut. Nulla sed nulla sed tellus feugiat dignissim a pulvinar sem.'
+name: 'Emay Dijital'
+profession: 'Sosyal Medya - Grafik Tasarım - Web Tasarım'
+text: '2016 yılında beri başladığımız bu serüvende kendimizi bir adım daha öteye taşıdık.
+Sosyal medya, web tasarım, grafik tasarım, fotoğraf ve video alanında sizlere daha iyi
+hizmet verebilmek için burdayız.
+'
 ---

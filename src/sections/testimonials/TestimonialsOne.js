@@ -38,7 +38,7 @@ class TestimonialsOne extends React.Component {
           <Container>
             <Row>
               <Col md={12}>
-                <AnimatedHeading text="Biz Kimiz" />
+                <AnimatedHeading text="BİZ KİMİZ ?" />
               </Col>
               <Col md={12}>
                 <RevealContent>
