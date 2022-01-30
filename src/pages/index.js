@@ -1,21 +1,19 @@
-import React from 'react'
-import Layout from 'components/layout'
-import { graphql } from 'gatsby'
-import Helmet from 'react-helmet'
-import Hero from 'sections/hero/Hero.js'
-import AboutOne from 'sections/about/AboutOne.js'
-import ServicesOne from 'sections/services/ServicesOne.js'
-import PortfolioOne from 'sections/portfolio/PortfolioOne.js'
-import TestimonialsOne from 'sections/testimonials/TestimonialsOne.js'
-import TeamOne from 'sections/team/TeamOne.js'
-import ClientsOne from 'sections/clients/ClientsOne.js'
-import ContactCreative from 'sections/contact/ContactCreative.js'
+import React from "react";
+import Layout from "components/layout";
+import { graphql } from "gatsby";
+import Helmet from "react-helmet";
+import Hero from "sections/hero/Hero.js";
+import AboutOne from "sections/about/AboutOne.js";
+import ServicesOne from "sections/services/ServicesOne.js";
+import PortfolioOne from "sections/portfolio/PortfolioOne.js";
+import TestimonialsOne from "sections/testimonials/TestimonialsOne.js";
+import TeamOne from "sections/team/TeamOne.js";
+import ClientsOne from "sections/clients/ClientsOne.js";
+import ContactCreative from "sections/contact/ContactCreative.js";
 
 class Index extends React.Component {
-
   render() {
-
-    const { site } = this.props.data
+    const { site } = this.props.data;
 
     return (
       <div>
@@ -25,7 +23,17 @@ class Index extends React.Component {
         </Helmet>
         <Layout
           isHome={true}
-          sections={['home', 'about', 'services', 'portfolio', 'testimonials', 'team', 'clients', 'contact']}
+          sections={[
+            "Anasayfa",
+            "Hakkımızda",
+            "Hizmetlerimiz",
+            "Portfolyo",
+            "Görüşler",
+            "Müşteriler",
+            "Takım",
+            "Blog",
+            "İletişim",
+          ]}
         >
           <Hero />
           <AboutOne />
@@ -37,11 +45,11 @@ class Index extends React.Component {
           <ContactCreative />
         </Layout>
       </div>
-    )
+    );
   }
 }
 
-export default Index
+export default Index;
 
 export const creativeOneQuery = graphql`
   query {
@@ -52,4 +60,4 @@ export const creativeOneQuery = graphql`
       }
     }
   }
-`
+`;

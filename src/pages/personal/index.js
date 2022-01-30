@@ -1,20 +1,18 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Helmet from 'react-helmet'
-import Layout from 'components/layout'
-import HeroPersonal from 'sections/hero/HeroPersonal.js'
-import AboutPersonal from 'sections/about/AboutPersonal.js'
-import ServicesThree from 'sections/services/ServicesThree.js'
-import PortfolioThree from 'sections/portfolio/PortfolioThree.js'
-import TestimonialsThree from 'sections/testimonials/TestimonialsThree.js'
-import ClientsThree from 'sections/clients/ClientsThree.js'
-import ContactPersonal from 'sections/contact/ContactPersonal.js'
+import React from "react";
+import { graphql } from "gatsby";
+import Helmet from "react-helmet";
+import Layout from "components/layout";
+import HeroPersonal from "sections/hero/HeroPersonal.js";
+import AboutPersonal from "sections/about/AboutPersonal.js";
+import ServicesThree from "sections/services/ServicesThree.js";
+import PortfolioThree from "sections/portfolio/PortfolioThree.js";
+import TestimonialsThree from "sections/testimonials/TestimonialsThree.js";
+import ClientsThree from "sections/clients/ClientsThree.js";
+import ContactPersonal from "sections/contact/ContactPersonal.js";
 
 class Index extends React.Component {
-
   render() {
-    
-    const { site } = this.props.data
+    const { site } = this.props.data;
 
     return (
       <div>
@@ -24,7 +22,17 @@ class Index extends React.Component {
         </Helmet>
         <Layout
           isHome={true}
-          sections={['home', 'about', 'services', 'portfolio', 'testimonials', 'clients', 'contact']}
+          sections={[
+            "Anasayfa",
+            "Hakkımızda",
+            "Hizmetlerimiz",
+            "Portfolyo",
+            "Görüşler",
+            "Müşteriler",
+            "Takım",
+            "Blog",
+            "İletişim",
+          ]}
         >
           <HeroPersonal />
           <AboutPersonal />
@@ -35,11 +43,11 @@ class Index extends React.Component {
           <ContactPersonal />
         </Layout>
       </div>
-    )
+    );
   }
 }
 
-export default Index
+export default Index;
 
 export const personalQuery = graphql`
   query {
@@ -50,4 +58,4 @@ export const personalQuery = graphql`
       }
     }
   }
-`
+`;
