@@ -254,7 +254,7 @@ class Hero extends React.Component {
                     <ServiceIcon>
                       <img
                         src={this.props.webexpertIcon.childImageSharp.fluid.src}
-                        alt="web experts"
+                        alt="Grafik Tasarım"
                       />
                     </ServiceIcon>
                     <ServiceHeading>Grafik Tasarım</ServiceHeading>
@@ -262,7 +262,7 @@ class Hero extends React.Component {
                     <ServiceText>
                       Emay Dijital olarak Yetenekli ve Profesyonel Grafik
                       tasarımcılarımızla firmanız için en iyi reklam çözümleri
-                      sunuyoruz.
+                      sunuyoruz...
                     </ServiceText>
                   </ServiceContent>
                 </Service>
@@ -327,7 +327,7 @@ export default (props) => (
             }
           }
         }
-        webexpertIcon: file(relativePath: { eq: "icons/web.png" }) {
+        webexpertIcon: file(relativePath: { eq: "icons/seo.png" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               src
@@ -341,7 +341,7 @@ export default (props) => (
             }
           }
         }
-        seoIcon: file(relativePath: { eq: "icons/seo.png" }) {
+        seoIcon: file(relativePath: { eq: "icons/social.png" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               src

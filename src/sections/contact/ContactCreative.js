@@ -156,13 +156,13 @@ class ContactCreative extends React.Component {
                     />
                   </IconContainer>
                   <Info>
-                    <InfoTitle>Address</InfoTitle>
+                    <InfoTitle>Whatsapp</InfoTitle>
                     <InfoLinkContainer>
                       <InfoLink
                         target="_blank"
                         href="https://maps.google.com/maps?ll=53.343244,-6.259338&z=14&t=m&hl=en&gl=US&mapclient=embed&q=1%20Grafton%20Street%20Dublin%20Ireland"
                       >
-                        1 Grafton Street Dublin Ireland
+                        Whatsapp
                       </InfoLink>
                     </InfoLinkContainer>
                   </Info>

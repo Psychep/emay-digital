@@ -102,15 +102,9 @@ class ServicesOne extends React.Component {
                     <ServiceHeading>DÜĞÜN ÇEKİMLERİ</ServiceHeading>
                     <ServiceSeparator />
                     <ServiceList>
-                      <ServiceListElement>
-                        Lorem ipsum dolor sit amet
-                      </ServiceListElement>
-                      <ServiceListElement>
-                        In vitae ultricies lacus vitae
-                      </ServiceListElement>
-                      <ServiceListElement>
-                        Pellentesque blandit libero
-                      </ServiceListElement>
+                      <ServiceListElement>Düğünler</ServiceListElement>
+                      <ServiceListElement>Açılışlar</ServiceListElement>
+                      <ServiceListElement>Kutlamalar</ServiceListElement>
                     </ServiceList>
                   </ServiceElement>
                 </AnimationContainer>
@@ -127,15 +121,9 @@ class ServicesOne extends React.Component {
                     <ServiceHeading>Sosyal Medya</ServiceHeading>
                     <ServiceSeparator />
                     <ServiceList>
-                      <ServiceListElement>
-                        Lorem ipsum dolor sit amet
-                      </ServiceListElement>
-                      <ServiceListElement>
-                        In vitae ultricies lacus vitae
-                      </ServiceListElement>
-                      <ServiceListElement>
-                        Pellentesque blandit libero
-                      </ServiceListElement>
+                      <ServiceListElement>İnstagram-twitter</ServiceListElement>
+                      <ServiceListElement>Reklam Yönetimi</ServiceListElement>
+                      <ServiceListElement>Gönderi Yönetimi</ServiceListElement>
                     </ServiceList>
                   </ServiceElement>
                 </AnimationContainer>
@@ -152,15 +140,9 @@ class ServicesOne extends React.Component {
                     <ServiceHeading>GRAFİK Tasarım</ServiceHeading>
                     <ServiceSeparator />
                     <ServiceList>
-                      <ServiceListElement>
-                        Lorem ipsum dolor sit amet
-                      </ServiceListElement>
-                      <ServiceListElement>
-                        In vitae ultricies lacus vitae
-                      </ServiceListElement>
-                      <ServiceListElement>
-                        Pellentesque blandit libero
-                      </ServiceListElement>
+                      <ServiceListElement>Logo Tasarım</ServiceListElement>
+                      <ServiceListElement>Grafik Tasarım</ServiceListElement>
+                      <ServiceListElement>Çizim Tasarım</ServiceListElement>
                     </ServiceList>
                   </ServiceElement>
                 </AnimationContainer>
@@ -177,15 +159,11 @@ class ServicesOne extends React.Component {
                     <ServiceHeading>Web Tasarım</ServiceHeading>
                     <ServiceSeparator />
                     <ServiceList>
+                      <ServiceListElement>SEO</ServiceListElement>
                       <ServiceListElement>
-                        Lorem ipsum dolor sit amet
+                        Kurumsal Web Sitesi
                       </ServiceListElement>
-                      <ServiceListElement>
-                        In vitae ultricies lacus vitae
-                      </ServiceListElement>
-                      <ServiceListElement>
-                        Pellentesque blandit libero
-                      </ServiceListElement>
+                      <ServiceListElement>E ticaret</ServiceListElement>
                     </ServiceList>
                   </ServiceElement>
                 </AnimationContainer>
@@ -202,15 +180,9 @@ class ServicesOne extends React.Component {
                     <ServiceHeading>Tanıtım & Reklam</ServiceHeading>
                     <ServiceSeparator />
                     <ServiceList>
-                      <ServiceListElement>
-                        Lorem ipsum dolor sit amet
-                      </ServiceListElement>
-                      <ServiceListElement>
-                        In vitae ultricies lacus vitae
-                      </ServiceListElement>
-                      <ServiceListElement>
-                        Pellentesque blandit libero
-                      </ServiceListElement>
+                      <ServiceListElement>Google Adwords</ServiceListElement>
+                      <ServiceListElement>Instagram Reklam</ServiceListElement>
+                      <ServiceListElement>Facebook Reklam</ServiceListElement>
                     </ServiceList>
                   </ServiceElement>
                 </AnimationContainer>
@@ -227,15 +199,9 @@ class ServicesOne extends React.Component {
                     <ServiceHeading>UI/UX Geliştirme</ServiceHeading>
                     <ServiceSeparator />
                     <ServiceList>
-                      <ServiceListElement>
-                        Lorem ipsum dolor sit amet
-                      </ServiceListElement>
-                      <ServiceListElement>
-                        In vitae ultricies lacus vitae
-                      </ServiceListElement>
-                      <ServiceListElement>
-                        Pellentesque blandit libero
-                      </ServiceListElement>
+                      <ServiceListElement>UI/UX Tasarım</ServiceListElement>
+                      <ServiceListElement>UI/UX Geliştirme</ServiceListElement>
+                      <ServiceListElement>Arayüz Tasarım</ServiceListElement>
                     </ServiceList>
                   </ServiceElement>
                 </AnimationContainer>
@@ -273,14 +239,14 @@ export default (props) => (
             }
           }
         }
-        seo: file(relativePath: { eq: "icons/seo2.png" }) {
+        seo: file(relativePath: { eq: "icons/mobile.png" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               src
             }
           }
         }
-        email: file(relativePath: { eq: "icons/email.png" }) {
+        email: file(relativePath: { eq: "icons/seo.png" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               src

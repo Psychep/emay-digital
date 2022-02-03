@@ -148,7 +148,7 @@ class ContactPersonal extends React.Component {
     `;
 
     return (
-      <Section id="contact">
+      <Section id="İletişim">
         <Container>
           <AnimationContainer animation="fadeIn">
             <FormRow>
@@ -157,9 +157,9 @@ class ContactPersonal extends React.Component {
                 <Gradient />
               </ContactCol>
               <ContactCol md={6}>
-                <Map
-                  title="map"
-                  src="https://maps.google.com/maps?width=500&amp;height=500&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+                <img
+                  src={this.props.contactIcon.childImageSharp.fluid.src}
+                  alt="map"
                 />
               </ContactCol>
             </FormRow>
@@ -195,7 +195,7 @@ class ContactPersonal extends React.Component {
                     />
                   </IconContainer>
                   <Info>
-                    <InfoTitle>Phone</InfoTitle>
+                    <InfoTitle>Telefon </InfoTitle>
                     <InfoLinkContainer>
                       <InfoLink href="tel:+905078354366">
                         0(507) 835-4366
@@ -215,13 +215,13 @@ class ContactPersonal extends React.Component {
                     />
                   </IconContainer>
                   <Info>
-                    <InfoTitle>Address</InfoTitle>
+                    <InfoTitle>Whatsapp</InfoTitle>
                     <InfoLinkContainer>
                       <InfoLink
                         target="_blank"
                         href="https://maps.google.com/maps?ll=53.343244,-6.259338&z=14&t=m&hl=en&gl=US&mapclient=embed&q=1%20Grafton%20Street%20Dublin%20Ireland"
                       >
-                        1 Grafton Street Dublin Ireland
+                        Whatsapp İletişim
                       </InfoLink>
                     </InfoLinkContainer>
                   </Info>
@@ -260,13 +260,21 @@ export default (props) => (
             }
           }
         }
+        contactIcon: file(relativePath: { eq: "icons/iletisimgec.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 500) {
+              src
+            }
+          }
+        }
       }
     `}
-    render={({ emailIcon, mapIcon, phoneIcon }) => (
+    render={({ emailIcon, mapIcon, phoneIcon, contactIcon }) => (
       <ContactPersonal
         emailIcon={emailIcon}
         mapIcon={mapIcon}
         phoneIcon={phoneIcon}
+        contactIcon={contactIcon}
         {...props}
       />
     )}
