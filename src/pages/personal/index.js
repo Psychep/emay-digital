@@ -18,7 +18,7 @@ class Index extends React.Component {
       <div>
         <Helmet>
           <title>{site.meta.title}</title>
-          <meta name="description" content={site.meta.description} />
+          <meta name="Hakkımızda" content={site.meta.description} />
         </Helmet>
         <Layout
           isHome={true}
